@@ -6,6 +6,22 @@ The previously best known solution uses a naive pattern-matching procedure to fi
 
 The way a human is expected to solve a Where's Waldo puzzle is different; humans must use their memory of what waldo looks like, do mental transformations to account for differences in pose, and recognize him freely by scanning the image.
 
-
 We implement a feedforward convolutional neural network to solve this. 
-In optimization we use:
+  In optimization we use:
+  ** Backpropogation**
+  Propogating the layers back to all layers.
+  ** Convolution**
+  Nonlinear transformation on the error.
+  ** Hidden layers**
+  Latent
+  ** Hinton's Dropout**
+  Randomized dropout for feedforward, back in when feedbackward.
+  ** Alpha Optimization**
+  iterate to find best learning parameter.
+  ** Gradient Descent**
+  Optimization
+  In preprocessing we use:
+  **Image Reflection**
+  We perform a matrix operation to transform the image along the y axis. This doubles our data set and accounts for different directions Waldo may be facing.
+  **Pose shifting**
+  We perform manual shifts to the head to simulate human pose shifting.
